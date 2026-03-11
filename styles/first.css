@@ -1,0 +1,35 @@
+#light {
+  border: 5px solid greenyellow;
+  background-color: white;
+  color: black;
+ 
+
+
+  p {
+    color: hotpink;
+  }
+
+  h3 {
+    color: chartreuse;
+    background-color: darkgreen;
+    padding: 20px;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-family: "Arial Black", sans-serif;
+    font-weight: bold;
+    color: transparent;
+
+    span {
+      display: inline-block;
+      background: linear-gradient(
+        to right,
+        rgba(63, 94, 251, 1) 0%,
+        rgba(157, 82, 180, 1) 50%,
+        rgba(252, 70, 107, 1) 100%
+      );
+      background-clip: text;
+    }
+  }
+}

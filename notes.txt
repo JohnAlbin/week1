@@ -1,0 +1,36 @@
+Data Types
+
+* Number
+  age = 3;
+* String
+  greeting = "hello, world"
+  greeting = 'hello, world' + '!'
+* Boolean
+  grumpy = true
+  happy = false
+* Undefined: never given a value
+  let trash;
+* Null: empty
+  stomache = null
+* Object
+  family = {
+    dad: 'Ba',
+    mom: 'Ma',
+    cat: 'Mr. Snuggles',
+    kids: 0,
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My first webpage</title>
+    <link rel="stylesheet" href="./styles/second.css" />
+    <link rel="stylesheet" href="./styles/first.css" />
+
+  </head>
+
+  <body id="light">
+    <button onclick="document.body.id='dark';">
+      Dark mode
+    </button>
+    <button onclick="document.body.id='light';">
+      Light mode
+    </button>
+
+    <h1>
+      <span>Welcome to freeCodeCamp</span>
+    </h1>
+
+    <h2>Full-Stack Curriculum</h2>
+    <img src="./images/wilkins-teaching-lego.jpg" width="200" />
+
+    <p>Learn the skills to become a full-stack developer</p>
+
+    <h3>Introduction to HTML</h3>
+    <p>HTML represents the content and structure of a webpage</p>
+
+    <h3>Introduction to CSS</h3>
+    <p>CSS is used to style a webpage</p>
+
+    <script>
+      let dog = {
+        name: "Puddles",
+        weight: 7,
+        happy: false,
+      };
+      console.log(dog.name);
+      let family = {
+        dad: "Ba",
+        mom: "Ma",
+        daughter: "Jie",
+        pet: dog,
+      };
+      console.log(family);
+      family.pet.happy = true;
+      console.log(console);
+    </script>
+  </body>
+</html>
