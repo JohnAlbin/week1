@@ -6,9 +6,22 @@
     <link rel="stylesheet" href="./styles/first.css" />
   </head>
 
-  <body id="light">
-    <button onclick="document.body.id = 'dark'">Dark mode</button>
-    <button onclick="document.body.id = 'light'">Light mode</button>
+  <body id="dark">
+    <button id="color-mode" onclick="changeColors()">Light mode</button>
+
+    <script>
+      const colorModeButton = document.querySelector("#color-mode");
+
+      function changeColors() {
+        if (document.body.id === "dark") {
+          document.body.id = "light";
+          colorModeButton.textContent = "Dark mode";
+        } else {
+          document.body.id = "dark";
+          colorModeButton.textContent = "Light mode";
+        }
+      }
+    </script>
 
     <h1>My first webpage</h1>
 
@@ -23,8 +36,12 @@
     <h3>Introduction to CSS</h3>
     <p>CSS is used to style a webpage</p>
 
+    <button onClick="howAreYou()">
+      How are you?
+    </button>
+
     <footer>
-      <p>Made on: 2026 March 12</p>
+      <p>Made on: 2026 March 30</p>
       <p>Author: John Albin Wilkins</p>
     </footer>
     <script>
@@ -44,11 +61,36 @@
       family.pet.happy = true;
       console.log(console);
 
-      let mood = prompt("How are you feeling?");
-      if (mood === "sleepy") {
-        alert("WAKE UP");
+      function howAreYou() {
+        let feelings = prompt("How are you feeling?");
+        respond(feelings);
       }
-      console.log(mood);
+
+      function respond(mood) {
+        if (mood === "sleepy") {
+          alert("WAKE UP");
+        } else {
+          alert("Oh! you are feeling " + mood + ".");
+        }
+        console.log("mood", typeof mood);
+      }
+      
+      console.log("hi");
+      if (true) {
+        let insideIf = 'yep';
+        console.log(typeof insideIf);
+      }
+
+      function addTwo(value) {
+        console.log(value+2);
+        return value+2;
+      }
+      addTwo(5);
+
+      let result = addTwo(9);
+      console.log("result", result);
+
+
     </script>
   </body>
 </html>

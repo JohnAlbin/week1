@@ -29,4 +29,8 @@
       background-clip: text;
     }
   }
+
+  footer p {
+    margin: 0;
+  }
 }
